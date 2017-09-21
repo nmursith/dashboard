@@ -1,0 +1,74 @@
+[06:06:03] Using gulpfile /opt/dashboard/vpfintechV2-dashboard/gulpfile.js
+[06:06:03] Starting 'scripts'...
+[06:06:03] Starting 'styles'...
+[06:06:03] Starting 'stylesAuth'...
+[06:06:03] Starting 'styles404'...
+[06:06:03] Starting 'copyVendorImages'...
+[06:06:03] Starting 'partials'...
+[06:06:03] Starting 'fonts'...
+[06:06:06] Finished 'styles404' after 2.64 s
+[06:06:06] Starting 'inject404'...
+[06:06:06] Finished 'stylesAuth' after 2.65 s
+[06:06:06] Starting 'injectAuth'...
+[06:06:06] gulp-inject 1 files into 404.html.
+[06:06:06] gulp-inject 1 files into auth.html.
+[06:06:06] Finished 'inject404' after 160 ms
+[06:06:06] gulp-inject 1 files into reg.html.
+[06:06:06] Finished 'injectAuth' after 222 ms
+[06:06:06] gulp-inject 52 files into main.scss.
+[06:06:06] Finished 'fonts' after 2.95 s
+[06:06:07] Finished 'styles' after 3.98 s
+[06:06:07] Finished 'copyVendorImages' after 3.79 s
+[06:06:07] Starting 'other'...
+[06:06:08] all files 248.08 kB
+[06:06:08] Finished 'scripts' after 4.97 s
+[06:06:08] Starting 'inject'...
+[06:06:08] gulp-inject 1 files into index.html.
+[06:06:08] gulp-inject 140 files into index.html.
+[06:06:08] Finished 'inject' after 169 ms
+[06:06:08] Finished 'partials' after 4.8 s
+[06:06:08] Starting 'html'...
+[06:06:08] gulp-inject Nothing to inject into 404.html.
+[06:06:08] gulp-inject Nothing to inject into auth.html.
+[06:06:09] gulp-inject 1 files into index.html.
+[06:06:09] gulp-inject Nothing to inject into reg.html.
+[06:06:09] release/ maps/styles/404-51a248cd0b.css.map 673 B
+[06:06:09] release/ maps/styles/auth-35d88e15fe.css.map 12.92 kB
+[06:06:09] release/ maps/styles/app-1102b7cb24.css.map 52.4 kB
+[06:06:09] release/ maps/styles/auth-35d88e15fe.css.map 12.92 kB
+[06:06:13] release/ maps/styles/vendor-3a06cf5b40.css.map 138.6 kB
+[06:06:13] release/ maps/styles/vendor-3a06cf5b40.css.map 138.6 kB
+[06:06:13] release/ maps/styles/vendor-3a06cf5b40.css.map 138.6 kB
+[06:06:49] release/ maps/scripts/vendor-53a4fb6d31.js.map 9.61 MB
+[06:06:51] release/ maps/scripts/app-3b4d920a2c.js.map 558.31 kB
+[06:06:51] release/ 404.html 963 B
+[06:06:51] release/ auth.html 2.32 kB
+[06:06:51] release/ index.html 2.34 kB
+[06:06:51] release/ styles/404-51a248cd0b.css 928 B
+[06:06:51] release/ reg.html 2.54 kB
+[06:06:51] release/ styles/auth-35d88e15fe.css 41.28 kB
+[06:06:51] release/ styles/app-1102b7cb24.css 130.75 kB
+[06:06:51] release/ styles/auth-35d88e15fe.css 41.28 kB
+[06:06:51] release/ styles/vendor-3a06cf5b40.css 353.31 kB
+[06:06:51] release/ styles/vendor-3a06cf5b40.css 353.31 kB
+[06:06:51] release/ styles/vendor-3a06cf5b40.css 353.31 kB
+[06:06:51] release/ scripts/vendor-53a4fb6d31.js 2.51 MB
+[06:06:51] release/ scripts/app-3b4d920a2c.js 297.92 kB
+[06:06:51] release/ all files 14.75 MB
+[06:06:51] Finished 'html' after 43 s
+[06:06:51] Finished 'other' after 44 s
+[06:06:51] Starting 'build'...
+[06:06:51] Finished 'build' after 15 μs
+[06:06:51] Starting 'serve:dist'...
+[06:06:51] Finished 'serve:dist' after 46 ms
+[BS] [BrowserSync SPA] Running...
+[BS] Access URLs:
+ -----------------------------------
+       Local: http://localhost:3000/
+    External: http://10.0.0.75:3000/
+ -----------------------------------
+          UI: http://localhost:3001
+ UI External: http://10.0.0.75:3001
+ -----------------------------------
+[BS] Serving files from: release
+[BS] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)

@@ -1,0 +1,61 @@
+<div class="horizontal-scroll">
+    <table class="table table-hover">
+        <thead>
+            <tr class="black-muted-bg">
+                <th class="browser-icons"></th>
+                <th></th>
+                <th></th>
+                <th class="align-right"></th>
+                
+                <th class="align-center" colspan="3" style="font-size: 16px;">Utilization</th>
+                <th class="align-center" colspan="3" style="font-size: 16px;">Stability</th>
+                
+                <th class="align-right"></th>
+            </tr>
+            <tr class="black-muted-bg">
+                <th class="browser-icons" ></th>
+                <th style="font-size: 16px;">API</th>
+                <th style="font-size: 16px;" class="align-right">Gold</th>
+                <th style="font-size: 16px;" class="align-right">Endpoints</th>
+                
+                <th style="font-size: 16px;" class="align-right">Subscriptions</th>
+                
+                <th style="font-size: 16px;" class="align-right">Total Hits</th>
+<!--                <th class="table-arr"></th>-->
+                
+                <th style="font-size: 16px;" class="align-right">Response Time</th>
+<!--                <th class="table-arr"></th>-->
+                
+                <th style="font-size: 16px;" class="align-right">Heart Beat</th>
+                
+                
+                <th style="font-size: 16px;" class="align-right">Publisher</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in metricsTableData | orderBy : '-gold'" class="no-top-border" >
+                
+                <td  style="vertical-align: middle; font-size: 16px;"><img style="border-radius: 10px;vertical-align: middle;" ng-src="{{getImage(item)}}" width="60" height="50"></td>
+                
+                <td ng-class="nowrap" style="vertical-align: middle; font-size: 16px;">{{item.API_NAME}} </td>
+                
+                <td class="align-right" style="vertical-align: middle; font-size: 16px;"><img  style="vertical-align: middle;" src="assets/img/img/gold.png" width="20" height="20"> <sub>{{beautifyGold(item.gold)}}</sub></td>
+                
+                <td class="align-right" style="vertical-align: middle; font-size: 16px;">{{item.ENDPOINTS}}</td>
+                
+                <td class="align-right"  style="vertical-align: middle; font-size: 16px;">{{item.SUBSCRIPTIONS}}</td>
+                
+                <td class="align-right" style="vertical-align: middle; font-size: 16px;">{{item.HIT_COUNT}}</td>
+<!--                <td class="table-arr" style="vertical-align: middle; font-size: 16px;"><i ng-class="{'icon-up': item.isTotalHitsUp, 'icon-down': !item.isTotalHitsUp }"></i></td>-->
+                
+                <td class="align-right" style="vertical-align: middle; font-size: 16px;">{{beautifyResponseTime(item.apiResponseTime)}}</td>
+<!--                <td class="table-arr" style="vertical-align: middle; font-size: 16px;"><i ng-class="{'icon-up': item.isResponseTimeUp, 'icon-down': !item.isResponseTimeUp }"></i></td>-->
+
+                <td class="align-center" style="vertical-align: middle;"><img ng-src="assets/img/img/{{item.apiHeartbeat}}.png" width="15" height="15"></td>
+                
+                <td class="align-right" style="vertical-align: middle; font-size: 16px;">{{item.PUBLISHER}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
